@@ -450,22 +450,26 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form">
+        <div class="wrap-footer-form">
           <p class="text-footer-sub">Subscribe</p>
 
-          <div class="wrap-input-footer">
-            <input
-              class="footer-input"
-              type="email"
-              name="subscribe"
-              placeholder="E-mail"
-            />
-            <button class="footer-btn" type="button">
-              Subscribe
-              <svg class="social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-frame"></use>
-              </svg>
-            </button>
+          
+            <form class="footer-form">
+              
+              <label class="footer-label"></label>
+              <input
+                class="footer-input"
+                type="email"
+                name="subscribe"
+                placeholder="E-mail"
+              />
+              <button class="footer-btn" type="submit">
+                Subscribe
+                <svg class="social-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-frame"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -479,38 +483,48 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label class="modal-label"
-            >Name
-            <div class="input-wrap">
-              <input
-                class="modal-input"
-                type="text"
-                name="user-name"
-                autofocus
-              />
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person-black"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="modal-label"
-            >Phone
-            <div class="input-wrap">
-              <input class="modal-input" type="tel" name="user-phone" />
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-phone-black"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="modal-label"
-            >Email
-            <div class="input-wrap">
-              <input class="modal-input" type="email" name="user-email" />
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-email-black"></use>
-              </svg>
-            </div>
-          </label>
+          <div class="wrap-modal-label">
+          <label class="modal-label" for="user-name">Name</label>
+          </div>
+          <div class="input-wrap">
+            <input
+              class="modal-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              autofocus
+            />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+          </div>
+
+          <label class="modal-label" for="user-phone">Phone</label>
+          <div class="input-wrap">
+            <input
+              class="modal-input"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+            />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+
+          <label class="modal-label" for="user-email">Email</label>
+          <div class="input-wrap">
+            <input
+              class="modal-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+            />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+          </div>
+
           <label class="modal-label" for="comment">Comment</label>
           <textarea
             class="modal-textarea"
