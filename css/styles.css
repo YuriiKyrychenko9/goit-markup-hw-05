@@ -620,6 +620,10 @@ img {
   margin-bottom: 8px;
 }
 
+.wrap-modal-checkbox {
+  margin-bottom: 24px;
+}
+
 .modal-label {
   display: block;
   color: var(--label-color);
@@ -637,7 +641,7 @@ img {
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.04em;
-  margin-bottom: 16px;
+
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
   border-radius: 4px;
@@ -647,6 +651,17 @@ img {
 
 .modal-textarea:focus {
   border-color: var(--primary-brand-color);
+}
+
+.wrap-modal-textarea {
+  margin-bottom: 16px;
+}
+
+.check-text {
+  color: var(--label-color);
+  font-size: 12px;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.04em;
 }
 
 .policy {
@@ -666,6 +681,18 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 8px;
+}
+
+.link-privacy {
+  text-decoration: underline;
+  color: var(--primary-brand-color);
+}
+
+.modal-check:checked + .check-text .policy {
+  background-color: var(--pressed-state-color);
+  border: none;
+  fill: var(--sub-background-color);
 }
 
 .input-wrap {
