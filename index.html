@@ -456,7 +456,7 @@
           
             <form class="footer-form">
               
-              <label class="footer-label"></label>
+              <label class="footer-label">
               <input
                 class="footer-input"
                 type="email"
@@ -469,12 +469,13 @@
                   <use href="./images/icons.svg#icon-frame"></use>
                 </svg>
               </button>
+              </label>
             </form>
           </div>
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -498,8 +499,9 @@
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
           </div>
-
+            <div class="wrap-modal-label">
           <label class="modal-label" for="user-phone">Phone</label>
+          </div>
           <div class="input-wrap">
             <input
               class="modal-input"
@@ -511,8 +513,9 @@
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
           </div>
-
+           <div class="wrap-modal-label">
           <label class="modal-label" for="user-email">Email</label>
+          </div>
           <div class="input-wrap">
             <input
               class="modal-input"
@@ -524,19 +527,27 @@
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
           </div>
-
-          <label class="modal-label" for="comment">Comment</label>
+           <div class="wrap-modal-label">
+          <label class="modal-label" for="user-comment">Comment</label>
+          
           <textarea
             class="modal-textarea"
             name="comment"
-            id="comment"
+            id="user-comment"
             placeholder="Text input"
           ></textarea>
-          <label class="modal-label">
-            <input type="checkbox" name="privat" value="privat" />
+          </div>
+          <div class="wrap-modal-label">
+             <input class="visually-hidden" type="checkbox" name="user-privacy" value="true" id="user-privacy" />
+          <label class="modal-label" for="user-privacy">
             I accept the terms and conditions of the
-            <span class="policy">Privacy Policy</span>
+            <span class="policy">
+              <svg width="10" height="8">
+                <use href="./images/icons.svg#icon-checkmark"></use>
+              </svg>
+            </span>
           </label>
+          </div>
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
       </div>
